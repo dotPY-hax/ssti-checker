@@ -19,7 +19,7 @@ def payload_generator():
 
 
 def make_payload(prefix, open, close):
-    a, b, c = random.randint(1,10000), random.randint(1,10000), random.randint(1,10000)
+    a, b, c = random.randint(1,1000), random.randint(1,1000), random.randint(1,1000)
     expression = "*".join((str(a), str(b), str(c)))
     expected = a * b * c
     payload = prefix + open + " " + expression + " " + close
